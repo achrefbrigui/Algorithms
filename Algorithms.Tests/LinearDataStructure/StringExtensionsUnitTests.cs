@@ -1,6 +1,7 @@
-﻿using Xunit;
+﻿using Algorithms.LinearDataStructure.Extensions;
+using Xunit;
 
-namespace Algorithms.Tests
+namespace Algorithms.Tests.LinearDataStructure
 {
     public class StringExtensionsUnitTests
     {

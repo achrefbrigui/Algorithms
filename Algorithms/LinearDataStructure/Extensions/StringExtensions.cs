@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms
+namespace Algorithms.LinearDataStructure.Extensions
 {
     public static class StringExtensions
     {
@@ -12,7 +12,7 @@ namespace Algorithms
         {
             if (input.Length == 1 || input.Length == 0) return true;
             if (input.Length == 2) return input[0] == input[1];
-            if (input[0] == input[input.Length - 1]) return IsPalyndrome(input.Substring(1, input.Length - 2));
+            if (input[0] == input[input.Length - 1]) return input.Substring(1, input.Length - 2).IsPalyndrome();
             return false;
         }
     }

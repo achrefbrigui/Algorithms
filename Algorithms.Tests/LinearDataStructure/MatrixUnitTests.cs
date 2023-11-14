@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using Algorithms.LinearDataStructure.Extensions;
 using Xunit;
 
-namespace Algorithms.Tests
+namespace Algorithms.Tests.LinearDataStructure
 {
     public class MatrixUnitTests
     {

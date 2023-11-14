@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms
-{        
+namespace Algorithms.LinearDataStructure.Extensions
+{
 
     public static class MatrixExtensions
-    {    
+    {
         //public enum ERotationType { ClockWise, AClockWise };
 
         public static int[,] NinetyDegRotation(this int[,] input, bool isClockwise)
@@ -27,7 +27,7 @@ namespace Algorithms
                     output[j, input.GetLength(0) - 1 - i] = input[i, j];
                 }
             }
-           
+
             return output;
         }
 
@@ -42,9 +42,9 @@ namespace Algorithms
                     output[input.GetLength(1) - 1 - j, i] = input[i, j];
                 }
             }
-     
+
             return output;
         }
-        
+
     }
 }

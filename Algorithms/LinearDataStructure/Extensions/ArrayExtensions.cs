@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Algorithms.NonLinearDataStructure;
 
-namespace Algorithms
+namespace Algorithms.LinearDataStructure.Extensions
 {
     public static class ArrayExtensions
     {
@@ -30,6 +33,20 @@ namespace Algorithms
             }
 
             return -1;
+        }
+
+        public static string PreOrderBinaryTreeTraversal(this string[] input)
+        {
+            StringBuilder sb = new StringBuilder();
+            var stack = new Stack<string>();
+            string currVal = null;
+            stack.Push(input[0]);
+            while (stack.Count != 0)
+            {
+
+            }
+
+            return sb.ToString();
         }
     }
 }
