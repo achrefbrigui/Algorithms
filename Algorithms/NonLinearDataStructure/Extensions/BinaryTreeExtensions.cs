@@ -10,6 +10,12 @@
 
     public static class BinaryTreeExtensions
     {
+        /// <summary>
+        /// Pre order traversal of a binary tree
+        /// </summary>
+        /// <typeparam name="T">Data value of the node</typeparam>
+        /// <param name="input">Binary tree</param>
+        /// <returns>String representation of the order</returns>
         public static string PreOrderTraversal<T>(this BinaryTree<T> input)
         {
             StringBuilder sb = new StringBuilder();

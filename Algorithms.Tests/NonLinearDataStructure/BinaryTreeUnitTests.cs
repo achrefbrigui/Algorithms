@@ -12,15 +12,15 @@
 
     public class BinaryTreeUnitTests
     {
-          public static IEnumerable<object[]> CustomInlineDate => 
+          public static IEnumerable<object[]> CustomInlineData => 
             new List<object[]>
             {
                 new object[] { new int[] { 1, 2, 3 }, "1 2 3" },
                 new object[] { new int[] { 1, 5, 3, 7, 9, 8 }, "1 5 7 9 3 8" }
             };
 
-        [Theory, MemberData(nameof(CustomInlineDate))]
-        public void IsPreOderUnitTest(int[] input, string expected)
+        [Theory, MemberData(nameof(CustomInlineData))]
+        public void PreOrderTraversal_Should_Return_CorrectOrderInString(int[] input, string expected)
         {
             var bt = new BinaryTree<int>(input);
 

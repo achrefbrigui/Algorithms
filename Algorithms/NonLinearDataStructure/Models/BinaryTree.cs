@@ -22,6 +22,13 @@
             Root = LoadRootFromArray(input);
         }
 
+        /// <summary>
+        /// Load the root binary tree from an array represenration of the tree
+        /// </summary>
+        /// <typeparam name="T">Node data value</typeparam>
+        /// <param name="input">Array representation of the tree</param>
+        /// <param name="i">Index of the node</param>
+        /// <returns>Tree representation of the array</returns>
         BinaryTreeNode<T> LoadRootFromArray<T>(T[] input, int i = 0)
         {
             BinaryTreeNode<T> root = null;
